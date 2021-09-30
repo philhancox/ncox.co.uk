@@ -1,0 +1,94 @@
+:root {
+    --grey: #f4f4f4;
+    --main-gradient-one: pink;
+    --main-gradient-two: darkblue;
+    --secondary-gradient-one: lightpink;
+    --secondary-gradient-two: blue;
+}
+html,
+body {
+    height: 100%;
+    background: var(--grey);
+}
+html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+p {
+    font-size: 36px;
+    color: dimgrey;
+    padding: 0;
+}
+.icons {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 0 0 0 5px;
+}
+.icons span {
+    margin-right: 10px;
+}
+.icons a {
+    background: -webkit-linear-gradient(var(--main-gradient-one), var(--main-gradient-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+.icons a:hover {
+    background: -webkit-linear-gradient(var(--secondary-gradient-one), var(--secondary-gradient-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+.emphasis {
+    color: darkblue;
+    font-size: 56px;
+    background: -webkit-linear-gradient(var(--main-gradient-one), var(--main-gradient-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ncox {
+    background:
+            linear-gradient(var(--grey), var(--grey)) padding-box,
+            linear-gradient(to right, var(--main-gradient-one), var(--main-gradient-two)) border-box;
+    border: 10px solid transparent;
+    border-top: var(--grey);
+    border-left: var(--grey);
+}
+img {
+    float: right;
+}
+@media only screen and (max-width: 1024px) {
+    #ncox {
+        border: none;
+        background: none;
+    }
+    p {
+        text-align: center;
+        font-size: 42px;
+    }
+    img {
+        float: none;
+        color: white;
+        background:
+                linear-gradient(var(--grey), var(--grey)) padding-box,
+                linear-gradient(to right, var(--main-gradient-one), var(--main-gradient-two)) border-box;
+        border-radius: 50%;
+        border: 10px solid transparent;
+        width: 75%;
+        display: block;
+        margin: 35px 0 35px 12.5%;
+    }
+    .icons {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+}
